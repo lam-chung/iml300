@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body{
+        background-image: url(../13.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+</style>
+</head>
+
+<body>
+   
+    <p>
+        All of a sudden something breaks off sharply.
+        The adventure is over, time resumes its daily routine.
+        I turn; behind me, this beautiful melodious form sinks entirely into the past.
+        It grows smaller, contracts as it declines, and now the end makes one with the <a href="#" id="random-link">beginning</a>.
+    </p>
+    <script>
+    // list of pages to choose from
+    const pages = [
+      "index.html",
+      "2.html",
+      "3.html",
+      "4.html",
+      "5.html",
+      "6.html",
+      "7.html",
+      "9.html",
+      "10.html"
+    ];
+
+    const link = document.getElementById("random-link");
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault(); // stop the default behavior of the link
+      const randomPage = pages[Math.floor(Math.random() * pages.length)];
+      window.location.href = randomPage; // go to the random page
+    });
+  </script>
+</body>

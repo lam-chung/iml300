@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Berylium';
+  src: url('./images/fonts/Berylium\ Rg\ It.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.body {
+  font-family: 'Berylium', serif;
+  font-size: 19em;
+}
+
+
+.hovertext {
+  display: inline-block;
+  transition: letter-spacing 0.3s ease;
+}
+
+.hovertext:hover {
+  letter-spacing: 1em;
+}
+
+
+.link:hover {
+  text-decoration: underline; /* or remove if you don’t want any hover change */
+}
+
+h1,
+a {
+  animation: coolAnimation 3s infinite;
+}
+
+#p1 {
+  animation: coolAnimation 5s infinite;
+}
+
+@keyframes coolAnimation {
+  0% {
+    color: red;
+  }   
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
