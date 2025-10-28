@@ -5,9 +5,18 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Berylium';
+  src: url('./fonts/Berylium\ Rg\ It.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
-  font-family: 'EBGaramond-Italic-VariableFont_wght', serif;
-   font-size: 20px;
+  font-family: 'Berylium', serif;
+  font-size: 3rem; /* optional */
+  line-height: 1.5; /* optional */
+  color: rgb(243, 191, 21);
 }
 
 
