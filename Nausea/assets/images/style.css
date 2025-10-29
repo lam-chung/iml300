@@ -43,9 +43,9 @@ body {
   color: rgb(238, 217, 156);
 
    text-shadow:
-    0 0 8px rgba(240, 191, 43, 0.8),
-    0 0 16px rgba(240, 191, 43, 0.5),
-    0 0 32px rgb(37, 28, 4);
+    0 0 8px rgba(108, 84, 12, 0.8),
+    0 0 16px rgba(120, 92, 6, 0.796),
+    0 0 32px rgb(19, 14, 2);
    
 }
 
@@ -97,12 +97,43 @@ a {
   0% {
     color: rgb(246, 231, 184);
   }   
+  50%{
+    color: rgb(29, 127, 184);;
+  }
   100% {
-    color: rgb(29, 127, 184);
+    color: rgb(246, 231, 184);
   }
 }
 
 p {
   text-indent: 2em;      /* fixed first-line indent */
   line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;   /* makes the p5 canvas stay behind text */
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center it */
+  text-align: center;
+  font-family: 'Berylium', serif;
+  font-size: 2rem;
+  color: rgb(240,191,43);
+  z-index: 10; /* ensures it's above the canvas */
+  text-shadow:
+    0 0 8px rgba(240,191,43,0.8),
+    0 0 16px rgba(240,191,43,0.5),
+    0 0 32px rgba(240,191,43,0.3);
 }
