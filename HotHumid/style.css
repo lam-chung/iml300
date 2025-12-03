@@ -62,24 +62,12 @@ body {
 /* LOGO */
 
 .logo-wrapper {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .logo-image {
   display: block;
   margin: 0 auto;
-}
-
-/* ========== QUOTE SECTION ========== */
-/* Your HTML uses class="body" on the section + <p>, so we style that class */
-
-.body {
-  max-width: 650px;
-  margin: 12px auto 0;
-  text-align: center;              /* explicitly center quote text */
-  font-family: 'CreatoDisplay', sans-serif;
-  font-size: 11px;
-  line-height: 1.5;
 }
 
 
