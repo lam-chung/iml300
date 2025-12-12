@@ -5,7 +5,7 @@ let targetMX = 0, targetMY = 0;
 
 function preload() {
   // Make sure 14.jpg is in the same folder as index.html/sketch.js
-  img = loadImage("image/14.jpg");
+  img = loadImage("images/14.jpg");
 }
 
 function setup() {
